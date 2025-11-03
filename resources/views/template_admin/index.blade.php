@@ -52,7 +52,7 @@
 
             @auth
                 <li class="nav-item active">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="{{ route('dashboard') }}">
                     <i class="fas fa-fw fa-user-alt"></i>
                     <span>Acessar paínel</span></a>
                 </li>

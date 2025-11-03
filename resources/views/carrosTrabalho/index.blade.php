@@ -2,12 +2,6 @@
 
 @section('conteudo')
 
-    @if (session('success'))
-        <div class="alert alert-success" role="alert">
-                {{ session('success') }}
-        </div>
-    @endif
-
     @guest
 
     <h2>Seja bem vindo Visitante!!!</h2>
