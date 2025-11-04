@@ -8,13 +8,26 @@
         </div>
     @endif
 
+
+    @if (session('carroEditado'))
+        <div class="alert alert-success" role="alert">
+                {{ session('carroEditado') }}
+        </div>
+    @endif
+
+    @if (session('carroApagado'))
+        <div class="alert alert-success" role="alert">
+                {{ session('carroApagado') }}
+        </div>
+    @endif
+
     @auth
 
     <h2>Seja bem vindo ao paínel Admin!!!</h2>
 
     @endauth
 
-        <table class="table table-striped">
+    <table class="table table-striped">
         <thead>
             <tr>
                 <th>Marca</th>
@@ -41,8 +54,8 @@
                     <td>{{ $linha->detalhes }}</td>
                     <td><img src="{{ $linha->img1 }}" alt="imagem carro" width="200px"></td>
                     <td>
-                        <a href="{{ route('carro.buscar', $linha->id) }}" class="btn btn-primary">E</a>
-                        <a href="{{ route('carro.apagar', $linha->id) }}" class="btn btn-danger">A</a>
+                        <a href="{{ route('buscarCarroTrabalho', $linha->id) }}" class="btn btn-primary">E</a>
+                        <a href="{{ route('apagarCarroTrabalho', $linha->id) }}" class="btn btn-danger">A</a>
                     </td>
                 </tr>
             @endforeach

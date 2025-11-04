@@ -41,6 +41,9 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
     Route::get('/cadastrarCarro', [CarroTrabalhoController::class, 'cadastrarCarro'])->name('cadastrarCarro');
     Route::post('/cadastrarCarro', [CarroTrabalhoController::class, 'salvarCarro'])->name('salvarCadastroCarro');
+    Route::get('/{id}', [CarroTrabalhoController::class, 'buscarCarro'])->name('buscarCarroTrabalho');
+    Route::post('/editar', [CarroTrabalhoController::class, 'editarCarro'])->name('editarCarroTrabalho');
+    Route::get('/apagar/{id}', [CarroTrabalhoController::class, 'apagarCarro'])->name('apagarCarroTrabalho');
     Route::get('/dashboard', [CarroTrabalhoController::class, 'dashboard'])->name('dashboard');
 });
 
