@@ -17,7 +17,7 @@ class CarroTrabalhoController extends Controller
 
     public function verAnuncio($id){
         $carro = CarrosTrabalho::find($id);
-        echo "cheguei no ver anuncio";
+
         if(!$carro)
             abort(404, 'Carro não encontrado');
 

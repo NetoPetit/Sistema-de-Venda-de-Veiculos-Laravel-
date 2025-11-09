@@ -24,30 +24,33 @@
                 <th>Quilometragem</th>
                 <th>Valor</th>
                 <th>Detalhes</th>
-                <th>Foto</th>
-                <th>Opções</th>
+                <th>Foto 1</th>
+                <th>Foto 2</th>
+                <th>Foto 3</th>
             </tr>
         </thead>
         <tbody>
-
-            @foreach ($carros as $linha)
-                <tr>
-                    <td>{{ $linha->marca }}</td>
-                    <td>{{ $linha->modelo }}</td>
-                    <td>{{ $linha->cor }}</td>
-                    <td>{{ $linha->ano_fabricacao }}</td>
-                    <td>{{ $linha->quilometragem }} Km</td>
-                    <td>R$ {{ $linha->valor }}</td>
-                    <td>{{ $linha->detalhes }}</td>
-                    <td>
-                        <img src="{{ $linha->img1 }}" alt="imagem carro" width="200px">
-                    </td>
-
-                </tr>
-            @endforeach
-
+            <tr>
+                <td>{{ $carro->marca }}</td>
+                <td>{{ $carro->modelo }}</td>
+                <td>{{ $carro->cor }}</td>
+                <td>{{ $carro->ano_fabricacao }}</td>
+                <td>{{ $carro->quilometragem }} Km</td>
+                <td>R$ {{ $carro->valor }}</td>
+                <td>{{ $carro->detalhes }}</td>
+                <td>
+                    <img src="{{ $carro->img1 }}" alt="imagem carro" width="200px">
+                </td>
+                <td>
+                    <img src="{{ $carro->img2 }}" alt="imagem carro" width="200px">
+                </td>
+                <td>
+                    <img src="{{ $carro->img3 }}" alt="imagem carro" width="200px">
+                </td>
+            </tr>
         </tbody>
     </table>
 
+    <a href="{{ route('index') }}" class="btn btn-info">Pagina inicial</a>
 @endsection
 

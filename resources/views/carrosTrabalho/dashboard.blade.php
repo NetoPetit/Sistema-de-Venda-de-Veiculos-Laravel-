@@ -69,8 +69,9 @@
 
 
     <div class="form-group">
-        <a href={{ route('cadastrarCarro')}} class="btn btn-success">Novo</a>
+        <a href={{ route('cadastrarCarro')}} class="btn btn-success">Cadastrar novo anúncio</a>
     </div>
+    <a href="{{ route('index') }}" class="btn btn-info">Ir para pagina inicial</a>
 
 @endsection
 

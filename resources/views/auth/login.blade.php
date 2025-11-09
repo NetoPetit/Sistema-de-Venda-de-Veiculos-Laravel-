@@ -32,7 +32,7 @@
                 </div>
                 <div>
                     <input type="submit" value="Log in" />
-                    <a href="#">Esqueceu sua senha?</a>
+                    <a href="{{ route('password.request') }}">Esqueceu sua senha?</a>
                 </div>
             </form><!-- form -->
 
