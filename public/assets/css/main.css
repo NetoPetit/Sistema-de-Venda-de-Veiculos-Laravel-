@@ -2009,6 +2009,8 @@ input, select, textarea {
 					color: #fff;
 				}
 
+
+
 	.dropotron {
 		background: #fff;
 		letter-spacing: 0.025em;
@@ -2069,6 +2071,11 @@ input, select, textarea {
 				border-right: solid 0.75em transparent;
 				z-index: 1;
 			}
+
+            .current-sair {
+                background: #ff4486;
+				color: white;
+            }
 
 /* Banner */
 

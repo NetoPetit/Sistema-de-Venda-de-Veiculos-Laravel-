@@ -10,18 +10,20 @@
 
                     @guest
 
-                        <h2>Seja bem vindo Visitante!!!</h2>
+                        <h2>Seja bem vindo!!!</h2>
                         <p>realize seu sonho sobre quatro rodas com quem entende do assunto.</p>
 
                     @endguest
 
 					@auth
 
-                        <p>Usuário autenticado: {{ Auth::user()->name }}</p>
-
+                        <h2>Bem vindo {{ Auth::user()->name }} !</h2>
+                        <p>que bom te ver por aqui!</p>
+                        <br>
+                        <p>Confira os carros disponíveis.</p>
+                        <br>
                         @if(Auth::user()->is_admin)
-                            <h2>Seja bem vindo Admin!!!</h2>
-                            <p>acesse o paínel para fazer o controle dos carros.</p>
+                            <p><strong>Acesse sua área de admin no paínel.</strong></p>
                         @endif
 
                      @endauth
