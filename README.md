@@ -121,31 +121,31 @@ O projeto já vem com dados prontos para teste:
 
 ### Página Inicial
 
-![Página Inicial](public/img/paginicial1.png)
-![Página Inicial](public/img/paginicial2.png)
+![Página Inicial](docs/prints/paginicial1.png)
+![Página Inicial](docs/prints/paginicial2.png)
 
 ### Detalhes do Veículo
 
-![Detalhes do Veículo](public/img/detalhes.png)
+![Detalhes do Veículo](docs/prints/detalhes.png)
 
 ### Cadastro de Usuário
 
-![Cadastro de Usuário](public/img/cadastrousuario.png)
+![Cadastro de Usuário](docs/prints/cadastrousuario.png)
 
 ### Login
 
-![Login](public/img/login.png)
+![Login](docs/prints/login.png)
 
 ### Recuperar Senha
 
-![Recuperar Senha](public/img/esqueceusenha.png)
+![Recuperar Senha](docs/prints/esqueceusenha.png)
 
 ### Área Admin
 
-![Área Admin](public/img/paineladm.png)
-![Área Admin](public/img/paineladm2.png)
+![Área Admin](docs/prints/paineladm.png)
+![Área Admin](docs/prints/paineladm2.png)
 
 ### Cadastro de Veículo
 
-![Cadastro de Veículo](public/img/cadastrocarro1.png)
-![Cadastro de Veículo](public/img/cadastrocarro2.png)
+![Cadastro de Veículo](docs/prints/cadastrocarro1.png)
+![Cadastro de Veículo](docs/prints/cadastrocarro2.png)
