@@ -51,7 +51,7 @@ O administrador pode:
 
 ## 🎨 Template e Layout  
 
-O site utiliza um **template visual base** com o uso de **@section** e **@yield** no Laravel.  
+O site utiliza um **template visual base** com o uso de **@extends** e **@section** e **@yield** no Laravel.  
  
 ---
 
